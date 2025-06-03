@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 
 import img1 from '../assets/img1.jpg';
@@ -31,7 +32,9 @@ function Hero() {
     fade: true,
     arrows: false
   };
+  const navigate = useNavigate();
 
+  
   return (
     <div className="hero-container">
       <Slider {...settings} className="slider-background">
@@ -50,8 +53,8 @@ function Hero() {
       <div className="overlay">
         <img src={logo} alt="BT Roofing Logo" className="logo" />
         <div className="buttons">
-          <button className="btn">Home</button>
-          <button className="btn">Galería</button>
+            <button className="btn" onClick={() => navigate('/home')}>Home</button>
+            <button className="btn" onClick={() => navigate('/gallery')}>Gallery</button>
         </div>
       </div>
     </div>

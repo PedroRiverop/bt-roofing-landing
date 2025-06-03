@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Questrial&display=swap');
+
+.about-section {
+  position: relative;
+  background: #fff;
+  padding: 6rem 2rem;
+  overflow: hidden;
+}
+
+.about-overlay {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  font-family: 'Questrial', sans-serif;
+  color: #444;
+}
+
+.about-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.about-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-image img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-text {
+    padding-right: 2rem;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
