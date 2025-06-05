@@ -5,8 +5,10 @@ import IntroSection from '../components/IntroSection';
 {/*import './Home.css';*/}
 import About from '../components/About';
 import Services from '../components/Services';
-{/*import Gallery from '../components/Gallery';
-import Contact from '../components/Contact';*/}
+import GalleryPreview from '../components/GalleryPreview';
+import Footer from '../components/Footer';
+import GallerySection from '../components/GallerySection';
+import Contact from '../components/Contact';
 
 function Home() {
   return (
@@ -16,8 +18,10 @@ function Home() {
       <IntroSection />
       <About />
       <Services />
-      {/*<Gallery />
-      <Contact />*/}
+      <GalleryPreview />
+      <GallerySection />
+      <Contact />
+      <Footer />
     </>
   );
 }

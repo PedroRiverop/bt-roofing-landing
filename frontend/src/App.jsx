@@ -2,8 +2,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
+import './App.css'
 {/* import Gallery from './views/Gallery';*/}
-import Landing from './components/Hero'; // si tu Hero inicial es toda la landing
+import Landing from './views/Hero'; // si tu Hero inicial es toda la landing
 
 function App() {
   return (
