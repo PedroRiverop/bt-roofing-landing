@@ -1,78 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Questrial&display=swap');
 
 .intro-section {
-  position: relative;
-  height: 100vh;
-  background-image: url('/assets/intro-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #f3f3f3; /* gris claro personalizado */
+  padding: 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-align: center;
-  overflow: hidden;
-}
-
-.intro-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .intro-content {
-  z-index: 2;
-  padding: 2rem;
   max-width: 800px;
   animation: fadeIn 1.2s ease-out forwards;
 }
 
 .intro-title {
   font-family: 'Cinzel', serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  color: #111;
 }
 
 .intro-subtitle {
   font-family: 'Questrial', sans-serif;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #444;
 }
 
-.intro-button {
-  background-color: #fff;
-  color: #000;
-  font-weight: bold;
-  padding: 0.75rem 2rem;
-  border: none;
+/* Utiliza el estilo global de botón .btn ya usado en Hero y otros */
+.btn1 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  color: #fff; /* texto negro */
+  border: 1px solid #fff; /* borde negro */
+  background-color: #111;
+  border-radius: 0; /* sin bordes redondeados */
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
-.intro-button:hover {
-  background-color: #222;
-  color: #fff;
-  transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.btn1:hover {
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #111;
 }

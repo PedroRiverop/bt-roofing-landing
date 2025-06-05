@@ -22,7 +22,9 @@
   align-items: center;
   gap: 2rem;
   opacity: 0;
-  animation: fadeInUp 1s ease-out 0.3s forwards;
+  transform: translateY(30px) scale(0.98);
+  filter: blur(4px);
+  animation: fadeSlideIn 1.2s ease-out 0.3s forwards;
 }
 
 .about-text {
@@ -52,6 +54,12 @@
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -66,13 +74,15 @@
   }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeSlideIn {
   0% {
-    transform: translateY(40px);
     opacity: 0;
+    transform: translateY(60px) scale(0.98);
+    filter: blur(4px);
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
   }
 }
