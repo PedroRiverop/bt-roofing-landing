@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Questrial&display=swap');
+
+.about-us {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  font-family: 'Questrial', sans-serif;
+  color: #333;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  padding: 0 1rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.about-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-section .text {
+  flex: 1 1 400px;
+}
+
+.about-section .text h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.about-section .text p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #555;
+}
+
+.about-section .text .contact-info {
+  margin-top: 20px;
+}
+
+.about-section .text .contact-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.about-section .media {
+  flex: 1 1 400px;
+}
+
+.about-section .media img,
+.about-section .text img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-link img {
+  max-width: 80%;
+  width:60%;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.map-link img:hover {
+  transform: scale(1.03);
+}
+
+
+.map-preview:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section.reverse {
+    flex-direction: column;
+  }
+}

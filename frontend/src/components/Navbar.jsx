@@ -21,7 +21,7 @@ function Navbar() {
         <img src={logo} alt="BT Roofing Logo" className="navbar-logo" onClick={() => navigate('/')} />
         <ul className="navbar-links">
           <li><Link to="/home">Home</Link></li>
-          <li><Link to="#about">About</Link></li>
+          <li><Link to="/aboutUs">About</Link></li>
           <li><Link to="#services">Services</Link></li>
           <li><Link to="#gallery">Gallery</Link></li>
           <li><Link to="#contact">Contact</Link></li>
